@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Maryhall 소극장 - 좌석 체크</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="header-top">
+      <a href="index.html" class="back-link">← 회차 선택으로</a>
+      <button id="resetBtn" class="danger">이 회차 초기화</button>
+    </div>
+    <h1 id="sessionTitle">Maryhall 소극장 <span class="sub">좌석 체크</span></h1>
+  </header>
+
+  <div class="status-bar">
+    <div class="count">
+      착석 <span id="checkedCount">0</span> / <span id="totalCount">94</span>
+    </div>
+    <div class="legend">
+      <span class="legend-item"><span class="box empty"></span>빈 좌석</span>
+      <span class="legend-item"><span class="box checked"></span>착석 완료</span>
+    </div>
+  </div>
+
+  <main>
+    <div class="stage-area">
+      <div id="seatMap" class="seat-map"></div>
+      <div class="stage">STAGE</div>
+    </div>
+  </main>
+
+  <script src="seat.js"></script>
+</body>
+</html>

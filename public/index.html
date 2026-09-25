@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Maryhall 소극장 - 좌석 체크</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body class="home">
+  <div class="home-wrap">
+    <h1>Maryhall 소극장 <span class="sub">좌석 체크</span></h1>
+
+    <div class="poster-frame">
+      <img id="posterImg" src="poster.jpg" alt="공연 포스터"
+           onerror="this.style.display='none'; document.getElementById('posterFallback').style.display='flex';" />
+      <div id="posterFallback" class="poster-fallback">
+        포스터 이미지 자리<br /><span>public/poster.jpg 로 교체하세요</span>
+      </div>
+    </div>
+
+    <p class="pick-label">체크할 회차를 선택하세요</p>
+    <div id="sessionButtons" class="session-buttons"></div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>

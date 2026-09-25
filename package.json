@@ -1,0 +1,16 @@
+{
+  "name": "seat-checker",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Maryhall 소극장 공연 관객 좌석 체크 웹앱",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
